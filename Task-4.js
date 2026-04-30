@@ -161,18 +161,8 @@ console.log("Grouped:", grouped);
 // Task 11: Flatten Array
 
 let arr6 = [1,[2,[3,[4]]]];
-function flatten(arr){
-  let res = [];
-  for(let item of arr){
-    if(Array.isArray(item)){
-      res = res.concat(flatten(item));
-    } else {
-      res.push(item);
-    }
-  }
-  return res;
-}
-console.log("Flatten:", flatten(arr6));
+let flatten = arr6.toString();
+console.log("Flatten:", flatten);
 
 // Output:
 // Flatten: [1,2,3,4]
